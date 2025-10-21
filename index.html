@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gold Tag Real Estate</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #252526; /* Dark background */
+    color: #ffffff; /* White text */
+  }
+
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .gold-glitter {
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #beaf87 25%, #ffffff 50%, #beaf87 75%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s linear infinite;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+  .subtext {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-top: 8px;
+  }
+
+  .listing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .listing-card {
+    background-color: #beaf87; /* Gold accent card background */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+  .listing-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .listing-card img {
+    width: 100%;
+    display: block;
+  }
+
+  .listing-info {
+    padding: 15px;
+  }
+
+  .listing-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #252526; /* Dark text for contrast */
+  }
+
+  .listing-info p {
+    margin: 5px 0;
+    color: #ffffff;
+  }
+
+  .listing-info .price {
+    font-size: 1.5rem;
+    color: #252526; /* Dark text */
+    font-weight: bold;
+  }
+
+  .view-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #252526; /* dark button */
+    color: #beaf87; /* gold text */
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .view-btn:hover {
+    background-color: #1a1a1a;
+  }
+
+  .pending::after {
+    content: "PENDING";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 215, 0, 0.8);
+    color: #252526;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="C21 Jackson Real Estate Logo">
+  <h1 class="gold-glitter">C21 JRE #GOLDTAG - Price Drops Last for ONE MONTH ONLY! 11.1.2025-11.30.2025</h1>
+  <p class="subtext">Click any listing below to view property info &amp; the MLS tear sheet.</p>
+</header>
+
+<div class="listing-grid">
+  <!-- Listing 1 -->
+  <article class="listing-card">
+    <img src="31723275.jpeg" alt="508 Dogwood Ave, Athens, PA">
+    <div class="listing-info">
+      <h3>508 Dogwood Ave, Athens, PA</h3>
+      <p>3 BED | 2 BATH | 1,364 sq.ft</p>
+      <p class="November Price">$155,000</p>
+      <a href="https://next.navicamls.net/446/ListingDisplay/?eListingId=1162922&eListingKey=1I9BVME556ZG" class="view-btn">View Listing</a>
+    </div>
+  </article>
+
+  <!-- Listing 2 -->
+  <article class="listing-card">
+    <img src="31723065.jpeg" alt="House 2">
+    <div class="listing-info">
+      <h3>486 Laurel Ln, New Albany, PA</h3>
+      <p>3 BED | 2 BATH | 1,296 sq.ft | 8.56 ACRES</p>
+      <p class="November Price">$199,990</p>
+      <a href="https://next.navicamls.net/446/ListingDisplay/?eListingId=1162923&eListingKey=A0ERRY1NMQV4" class="view-btn">View Listing</a>
+    </div>
+  </article>
+
+  <!-- Listing 3 Pending -->
+  <article class="listing-card pending">
+    <img src="31722425.jpeg" alt="House 3">
+    <div class="listing-info">
+      <h3>300 Miller Hollow Rd, Waverly, NY</h3>
+      <p>45.39  Acres | OGM Rights Convey</p>
+      <p class="November Price">$130,000</p>
+      <a href="https://next.navicamls.net/446/ListingDisplay/?eListingId=1162924&eListingKey=EEYKH6GPOYQK" class="view-btn">View Listing</a>
+    </div>
+  </article>
+
+  <!-- Listing 4 -->
+  <article class="listing-card">
+    <img src="31723257.jpeg" alt="House 4">
+    <div class="listing-info">
+      <h3>400 Bridge St, Towanda, PA</h3>
+      <p>4  BED | 3 BATH | 2,406 sq.ft</p>
+      <p class="November Price">$129,900</p>
+      <a href="https://next.navicamls.net/446/ListingDisplay/?eListingId=1162925&eListingKey=0WM7OY1A1H8T" class="view-btn">View Listing</a>
+    </div>
+  </article>
+
+<!-- Listing 5 -->
+  <article class="listing-card">
+    <img src="31723287.jpeg" alt="House 5">
+    <div class="listing-info">
+      <h3>182 Brookside Dr, Monroeton, PA</h3>
+      <p>3  BED | 3 BATH | 1,396 sq.ft</p>
+      <p class="November Price">$135,000</p>
+      <a href="https://next.navicamls.net/446/ListingDisplay/?eListingId=1162926&eListingKey=Q05UW1GP7WDJ" class="view-btn">View Listing</a>
+    </div>
+  </article>
+
+<!-- Listing 6 -->
+  <article class="listing-card">
+    <img src="31721516.jpeg" alt="House 6">
+    <div class="listing-info">
+      <h3>00 Queen Esther Dr, Sayre, PA</h3>
+      <p>179x173 LOT | OGM Rights Convey</p>
+      <p class="November Price">$20,900</p>
+      <a href="https://next.navicamls.net/446/ListingDisplay/?eListingId=1162927&eListingKey=YKN6MF8HREPV" class="view-btn">View Listing</a>
+    </div>
+  </article>
+</div>
+
+</body>
+</html>
