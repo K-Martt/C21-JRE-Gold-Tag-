@@ -131,6 +131,49 @@ footer {
   background-color: #252526; /* dark background */
   font-family: 'Lato', sans-serif; /* matches your body text */
 }
+/* Featured Listing Styles */
+.featured-listing {
+  grid-column: span 3; /* stretches across grid columns */
+  background-color: #beaf87; /* gold accent */
+  border: 3px solid #ffffff; /* white border */
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.7); /* subtle gold glow */
+  position: relative; /* needed for badge positioning */
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-listing:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 24px rgba(255, 215, 0, 0.9);
+}
+
+.featured-listing h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.featured-listing .price {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Featured Badge */
+.featured-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(90deg, #beaf87 25%, #ffffff 50%, #beaf87 75%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding: 5px 12px;
+  border-radius: 4px;
+  animation: shimmer 3s linear infinite;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.7);
+}
 
 </style>
 </head>
@@ -141,6 +184,16 @@ footer {
   <h1 class="gold-glitter">Go for #GOLDTAG - Exclusive Price Drops for ONE MONTH ONLY! 11.1.2025-11.30.2025</h1>
   <p class="subtext">Click any listing below to view property info &amp; the MLS tear sheet.</p>
 </header>
+
+<div class="listing-card featured-listing">
+  <div class="featured-badge">FEATURED</div>
+  <img src="256QE.jpeg" alt="Featured Listing">
+  <div class="listing-info">
+    <h3>256 Queen Esther Dr, Sayre, PA</h3>
+    <p class="price">$545,000</p>
+    <a href="https://next.navicamls.net/446/ListingDisplay/?eListingId=1163645&eListingKey=Z33915GDL8Y3" class="view-btn">View MLS Info</a>
+  </div>
+</div>
 
 <div class="listing-grid">
   <!-- Listing 1 -->
