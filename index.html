@@ -131,31 +131,32 @@ footer {
   background-color: #252526; /* dark background */
   font-family: 'Lato', sans-serif; /* matches your body text */
 }
-/* Featured Listing Styles */
+/* Featured Listing — slightly larger version */
 .featured-listing {
-  grid-column: span 3; /* stretches across grid columns */
+  grid-column: span 2; /* slightly bigger, spans 2 columns instead of 3 */
   background-color: #beaf87; /* gold accent */
   border: 3px solid #ffffff; /* white border */
-  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.7); /* subtle gold glow */
-  position: relative; /* needed for badge positioning */
-  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(255, 215, 0, 0.6); /* subtle gold glow */
+  position: relative;
+  transform: scale(1.03); /* slightly bigger than others */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .featured-listing:hover {
-  transform: scale(1.08);
-  box-shadow: 0 12px 24px rgba(255, 215, 0, 0.9);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 215, 0, 0.8);
 }
 
 .featured-listing h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem; /* slightly larger than other listings */
   font-weight: bold;
 }
 
 .featured-listing .price {
-  font-size: 1.8rem;
+  font-size: 1.6rem; /* slightly larger than other listings */
   font-weight: bold;
 }
+
 
 /* Featured Badge */
 .featured-badge {
