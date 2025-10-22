@@ -131,32 +131,18 @@ footer {
   background-color: #252526; /* dark background */
   font-family: 'Lato', sans-serif; /* matches your body text */
 }
-/* Featured Listing — slightly larger version */
+/* Featured Listing — slightly larger */
 .featured-listing {
-  grid-column: span 2; /* slightly bigger, spans 2 columns instead of 3 */
-  background-color: #beaf87; /* gold accent */
-  border: 3px solid #ffffff; /* white border */
-  box-shadow: 0 6px 12px rgba(255, 215, 0, 0.6); /* subtle gold glow */
-  position: relative;
-  transform: scale(1.03); /* slightly bigger than others */
+  transform: scale(1.05); /* slightly bigger than other listings */
+  position: relative; /* needed for badge */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover effect */
 .featured-listing:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(255, 215, 0, 0.8);
+  transform: scale(1.07);
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.6);
 }
-
-.featured-listing h3 {
-  font-size: 1.3rem; /* slightly larger than other listings */
-  font-weight: bold;
-}
-
-.featured-listing .price {
-  font-size: 1.6rem; /* slightly larger than other listings */
-  font-weight: bold;
-}
-
 
 /* Featured Badge */
 .featured-badge {
@@ -174,6 +160,8 @@ footer {
   border-radius: 4px;
   animation: shimmer 3s linear infinite;
   box-shadow: 0 0 8px rgba(255, 215, 0, 0.7);
+  z-index: 10; /* ensures badge is above image */
+}
 }
 
 </style>
@@ -192,7 +180,8 @@ footer {
   <img src="256QE.jpeg" alt="Featured Listing">
   <div class="listing-info">
     <h3>256 Queen Esther Dr, Sayre, PA</h3>
-    <p class="price">$545,000</p>
+    <p>5 BED | 4 BATH | 4,237 sq.ft | 1.22 ACRES</p>
+    <p class="November Price">$545,000</p>
     <a href="https://next.navicamls.net/446/ListingDisplay/?eListingId=1163645&eListingKey=Z33915GDL8Y3" class="view-btn">View MLS Info</a>
   </div>
 </div>
