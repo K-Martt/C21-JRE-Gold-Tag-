@@ -144,26 +144,32 @@ footer {
   box-shadow: 0 8px 16px rgba(255, 215, 0, 0.6);
 }
 
-/* Featured Badge */
+/* Featured Badge — brighter & more eye-catching */
 .featured-badge {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  background: linear-gradient(90deg, #beaf87 25%, #ffffff 50%, #beaf87 75%);
+  top: 12px;
+  left: 12px;
+  background: linear-gradient(90deg, #fff6cc 0%, #beaf87 50%, #fff6cc 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'DM Serif Display', serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 900;
-  padding: 5px 12px;
-  border-radius: 4px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 12px rgba(190, 175, 135, 0.9);
   animation: shimmer 3s linear infinite;
-  box-shadow: 0 0 8px rgba(255, 215, 0, 0.7);
-  z-index: 10; /* ensures badge is above image */
-}
 }
 
+/* Style for the featured listing note */
+.featured-note {
+  font-style: italic;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-top: 8px;
+  opacity: 0.9;
+}
 </style>
 </head>
 <body>
@@ -182,9 +188,11 @@ footer {
     <h3>256 Queen Esther Dr, Sayre, PA</h3>
     <p>5 BED | 4 BATH | 4,237 sq.ft | 1.22 ACRES</p>
     <p class="November Price">$545,000</p>
-    <a href="https://next.navicamls.net/446/ListingDisplay/?eListingId=1163645&eListingKey=Z33915GDL8Y3" class="view-btn">View Listing</a>
+    <p class="featured-note">Listed For November; Off The Market Come December.</p>
+    <a href="https://next.navicamls.net/446/ListingDisplay/?eListingId=1163892&eListingKey=ZS16VZ2E6N7N" class="view-btn">View Listing</a>
   </div>
 </div>
+
 
   <!-- Listing 1 -->
   <article class="listing-card">
