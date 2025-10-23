@@ -118,18 +118,26 @@
   }
 .footer-line {
   height: 2px;
-  background-color: #beaf87; /* your gold/highlight color */
+  background-color: #beaf87; /* gold/highlight color */
   margin: 0 auto 10px auto;
   width: 80%;
 }
 
 footer {
   text-align: center;
-  padding: 20px 0;
-  font-size: 14px;
-  color: #ffffff; /* white text */
+  padding: 15px 10px;      /* slightly less vertical padding for compact look */
+  font-size: 0.85rem;       /* smaller overall font */
+  line-height: 1.3rem;      /* tighter line spacing */
+  color: #ffffff;
   background-color: #252526; /* dark background */
   font-family: 'Lato', sans-serif; /* matches your body text */
+}
+
+footer .footer-legal {
+  margin-top: 6px;          /* less space from copyright line */
+  font-size: 0.7rem;        /* small but readable */
+  color: #beaf87;           /* gold accent for branding */
+  line-height: 1.2rem;      /* compact spacing */
 }
 /* Featured Listing — slightly larger */
 .featured-listing {
@@ -269,6 +277,9 @@ footer {
 <footer>
   <div class="footer-line"></div>
   <p>© 2025 Century 21 Jackson Real Estate. All rights reserved.</p>
+  <p class="footer-legal">
+    CENTURY 21®, the CENTURY 21 Logo and C21® are service marks owned by Century 21 Real Estate LLC. Century 21 Real Estate LLC fully supports the principles of the Fair Housing Act and the Equal Opportunity Act. Each office is independently owned and operated. Listing information is deemed reliable but not guaranteed accurate.
+  </p>
 </footer>
 
 </body>
