@@ -109,24 +109,28 @@
   overflow: hidden;
 }
 
-/* Diagonal Pending Banner */
-.pending::after {
-  content: "PENDING";
+.listing-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.pending-banner {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(-25deg);
-  background: rgba(190, 175, 135, 0.7); /* translucent gold */
-  color: #252526; /* dark text */
-  font-size: 2rem;
-  font-weight: 900;
-  padding: 20px 80px;
-  border-radius: 6px;
-  text-align: center;
-  text-transform: uppercase;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  background: rgba(190, 175, 135, 0.85);
+  color: #fff;
   font-family: 'DM Serif Display', serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 14px 90px;
+  letter-spacing: 3px;
+  z-index: 10;
   pointer-events: none;
 }
+
 
 
 .footer-line {
@@ -218,16 +222,20 @@ footer .footer-legal {
     </div>
   </article>
 
-  <!-- Listing 2 -->
-  <article class="listing-card pending">
+<!-- Listing 2 -->
+<article class="listing-card pending">
+  <div class="listing-img-wrapper">
     <img src="31723065.jpeg" alt="House 2">
-    <div class="listing-info">
-      <h3>486 Laurel Ln, New Albany, PA</h3>
-      <p>3 BED | 2 BATH | 1,296 sq.ft | 8.56 ACRES</p>
-      <p class="November Price">$198,500</p>
-      <a href="https://next.navicamls.net/446/ListingDisplay/?eListingId=1168283&eListingKey=Z1259WJWBU4K" class="view-btn">View Listing</a>
-    </div>
-  </article>
+    <div class="pending-banner">PENDING</div>
+  </div>
+
+  <div class="listing-info">
+    <h3>486 Laurel Ln, New Albany, PA</h3>
+    <p>3 BED | 2 BATH | 1,296 sq.ft | 8.56 ACRES</p>
+    <p class="November Price">$198,500</p>
+    <a href="https://next.navicamls.net/446/ListingDisplay/?eListingId=1168283&eListingKey=Z1259WJWBU4K" class="view-btn">View Listing</a>
+  </div>
+</article>
 
 <!-- Listing 3 -->
 <article class="listing-card">
