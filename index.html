@@ -109,22 +109,23 @@
   overflow: hidden;
 }
 
-.pending-banner {
+/* Diagonal Pending Banner */
+.pending::after {
+  content: "PENDING";
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(-30deg);
-  background: rgba(190, 175, 135, 0.75); /* translucent gold */
-  color: #fff;
-  font-family: 'DM Serif Display', serif;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 12px 80px;
-  letter-spacing: 3px;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  background: rgba(190, 175, 135, 0.7); /* translucent gold */
+  color: #252526; /* dark text */
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 20px 80px;
+  border-radius: 6px;
   text-align: center;
-  z-index: 10;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  font-family: 'DM Serif Display', serif;
+  pointer-events: none;
 }
 
 
@@ -218,7 +219,7 @@ footer .footer-legal {
   </article>
 
   <!-- Listing 2 -->
-  <article class="listing-card">
+  <article class="listing-card pending">
     <img src="31723065.jpeg" alt="House 2">
     <div class="listing-info">
       <h3>486 Laurel Ln, New Albany, PA</h3>
